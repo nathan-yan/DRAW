@@ -8,13 +8,13 @@ pygame.init()
 screen = pygame.display.set_mode((500, 500))
 
 disp = np.zeros([28, 28])
-write_vec = np.array([[.5, .5, .5],
+write_vec = np.array([[.1, .5, .1],
                       [.5, .1, .5],
-                      [.5, .5, .5]])
+                      [.1, .5, .1]])
 
 N = 3
 stride = 0.1
-variance = .01
+variance = .5
 
 while True:
     for event in pygame.event.get():
